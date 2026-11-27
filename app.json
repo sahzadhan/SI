@@ -1,0 +1,37 @@
+{
+  "expo": {
+    "name": "Shahzad Intelligence",
+    "slug": "shahzad-intelligence",
+    "version": "1.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow Shahzad Intelligence to select images for AI analysis and editing.",
+          "cameraPermission": "Allow Shahzad Intelligence to take photos for AI analysis."
+        }
+      ],
+      [
+        "expo-document-picker",
+        {
+          "iCloudContainerEnvironment": "Production"
+        }
+      ],
+      [
+        "expo-speech-recognition",
+        {
+          "microphonePermission": "Allow Shahzad Intelligence to listen to your voice.",
+          "speechRecognitionPermission": "Allow Shahzad Intelligence to convert speech to text."
+        }
+      ]
+    ],
+    "android": {
+      "package": "com.shahzadintelligence.app",
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ]
+    }
+  }
+}
